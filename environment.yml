@@ -1,0 +1,16 @@
+name: caph
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyter
+  - ipykernel
+  - ipywidgets
+  - pip
+  - pip:
+    - jax

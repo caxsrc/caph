@@ -1,11 +1,11 @@
 {
-    "name": "Environment for CAPH codespaces",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     "hostRequirements": {
-        "cpus": 4
+      "cpus": 4
     },
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "conda env create -f environment.yml",
+    "postCreateCommand": "",
     "customizations": {
       "codespaces": {
         "openFiles": []
@@ -17,4 +17,4 @@
         ]
       }
     }
-}
+  }
