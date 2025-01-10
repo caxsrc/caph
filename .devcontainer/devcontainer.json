@@ -1,0 +1,20 @@
+{
+    "name": "Environment for CAPH codespaces",
+    "hostRequirements": {
+        "cpus": 4
+    },
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "codespaces": {
+        "openFiles": []
+      },
+      "vscode": {
+        "extensions": [
+          "ms-toolsai.jupyter",
+          "ms-python.python"
+        ]
+      }
+    }
+}
