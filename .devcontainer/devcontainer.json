@@ -4,8 +4,8 @@
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "conda env create -f environment.yml",
-    "postCreateCommand": "",
+    "onCreateCommand": "conda env create -f environment.yml",
+    "postCreateCommand": "conda init",
     "customizations": {
       "codespaces": {
         "openFiles": []
